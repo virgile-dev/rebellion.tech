@@ -34,12 +34,12 @@ layout: compress
             <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
         </nav>
     </header>
-    
+
     <div id="gallery">
       <center>
         <h2 style="font-size:30px;">Gallerie</h2>
         {% for post in site.posts %}
-      <img style="width:30%; margin:10px;" src="{{ post.image }}">
+      <img style="width:30%; margin:10px;" src="{{ post.image }}" alt="{{ post.title}}">
       {% endfor %}
       </center>
     </div>
