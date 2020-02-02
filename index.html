@@ -13,6 +13,7 @@ layout: compress
     <meta name="author" content="{{ site.author }}"/>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css"/>
     <link rel="stylesheet" type="text/css" href="css/modern-blog.css"/>
     <!--[if IE]>
@@ -39,9 +40,11 @@ layout: compress
     <div id="gallery">
       <center>
         <h2 style="font-size:30px;">Gallerie</h2>
+        <div class="row">
         {% for post in site.posts %}
-      <img style="width:30%; margin:10px;" src="{{ post.image }}" alt="{{ post.title}}">
+      <div class="col-md-6"><img style="width:100%;margin:10px;" src="{{ post.image }}" alt="{{ post.title}}"></div>
       {% endfor %}
+      </div>
       </center>
     </div>
     <div id="map">
